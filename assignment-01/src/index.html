@@ -12,17 +12,15 @@
   <h1>Hello World using HTML</h1>
   
   <!-- Using plain JS -->
-  <div id="root-js"></div>
-  <div id="root"></div>
-  
   <script>
-    const rootJs = document.getElementById("root-js");
+    const body = document.getElementsByTagName("body")[0];
     const headingJs = document.createElement("h1");
     headingJs.innerHTML = "Hello World using JS";
-    rootJs.appendChild(headingJs);
+    body.appendChild(headingJs);
   </script>
 
-  <!-- Using React -->
+<!-- Using React -->
+  <div id="root"></div>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="App.js"></script>
