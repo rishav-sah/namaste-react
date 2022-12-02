@@ -1,41 +1,45 @@
-/* default values reset */
+/* custom CSS reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
+  background-color: #F5F5F5;
 }
 
-/* Header component */
+/* Header Component */
 .header {
-  padding: 40px;
+  padding: 24px;
   width: 100%;
-  height: 7vh;
+  height: 120px;
+}
+
+.navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
-.header-logo {
-  width: 180px;
+.navbar-logo {
+  width: 120px;
 }
 
-.header-logo > img {
+.navbar-logo > img {
   width: 100%;
 }
 
-.header-searchbar {
+.navbar-searchbar {
   margin: 0 24px;
   width: 450px;
   display: flex;
   justify-content: space-between;
 }
 
-.header-searchbar > input {
+.navbar-searchbar > input {
   border: 2px solid #767676;
   border-radius: 20px;
   margin-right: 10px;
@@ -44,11 +48,11 @@
 
 }
 
-.header-searchbar > input:focus {
+.navbar-searchbar > input:focus {
   outline: none;
 }
 
-.header-searchbar > button {
+.navbar-searchbar > button {
   border: none;
   border-radius: 10px;
   padding: 12px 20px;
@@ -59,12 +63,12 @@
   cursor: pointer;
 }
 
-.header-user {
+.navbar-user {
   width: 42px;
   cursor: pointer;
 }
 
-.header-user > img {
+.navbar-user > img {
   width: 100%;
 }
 
@@ -79,4 +83,74 @@
 
 .title > h1, h2, h3, h4 {
   margin: 16px 0;
+}
+
+/* Card Component */
+
+.card-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F5F5F5;
+}
+
+.card {
+  padding: 20px;
+  width: 25%;
+}
+
+.card-main {
+  border-radius: 20px;
+  padding-bottom: 24px;
+  width: 320px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-cover {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.card-cover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-dp {
+  position: absolute;
+  bottom: -40%;
+  left: 30%;
+  padding: 2px;
+  width: 120px;
+}
+
+.card-dp > img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.card-content {
+  margin-top: 80px;
+}
+
+.card-name {
+  text-align: center;
+  font-size: 24px;
+}
+
+.card-info {
+  margin: 16px 0 0 24px;
+}
+
+.card-info > li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
 }
